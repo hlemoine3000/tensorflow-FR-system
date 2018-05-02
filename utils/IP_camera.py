@@ -13,13 +13,11 @@ class Cam():
         self.stream = requests.get(url, stream=True)
         self.thread_cancelled = False
         #self.thread = Thread(target=self.run)
-        print
-        "camera initialised"
+        print("camera initialised")
 
     def start(self):
         self.thread.start()
-        print
-        "camera stream started"
+        print("camera stream started")
 
     def run(self):
         bytes = b''
